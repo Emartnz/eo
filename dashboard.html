@@ -69,7 +69,7 @@
       defer=""
     ></script>
     <script
-      src="./_next/static/chunks/pages/total-courses-2e78de261dc31a25.js"
+      src="./_next/static/chunks/pages/dashboard-4896511606c9f9b6.js"
       defer=""
     ></script>
     <script
@@ -83,21 +83,36 @@
   </head>
   <body class="overflow-x-hidden">
     <div id="__next">
-      <div
-        id="gridCourses"
-        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 grid-rows-1 md:grid-rows-2 sm:gap-4 md:gap-6 lg:gap-6 px-0 mt-14 pt-4 md:pt-0 hd:px-10 lg:px-72 mt-0 md:mt-64"
-      ></div>
-      <button
-        class="mx-auto mt-12 w-full md:w-3/12 sm:mb-9 hd:mb-28 md:mb-36 px-6 border bg-[#0060EF] py-4 md:py-6 text-white hover:text-gray-200 text-lg rounded-xl shadow hover:shadow-lg outline-none focus:outline-none hover:bg-[#0055d4] hover:border-[#0055d4] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
-        type="button"
-      >
-        Cargar más
-      </button>
+      <main class="flex flex-row w-full h-screen">
+        <aside class="w-1/4 bg-[#EF7D00] h-screen p-8">
+          <h1 class="text-2xl">Dashboard</h1>
+          <button class="hover:text-gray-300">Logout</button>
+        </aside>
+        <div class="w-full pl-24 pt-24 overflow-auto">
+          <p class="text-black text-4xl">
+            Cursos de <span class="font-bold"></span>
+          </p>
+          <span class="-pt-24 w-full"
+            ><div
+              id="gridCourses"
+              class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 grid-rows-1 md:grid-rows-2 sm:gap-4 md:gap-6 lg:gap-6 px-0 mt-14 pt-4 md:pt-0 hd:px-10 lg:px-36 mt-0 md:mt-20"
+            ></div>
+            <div class="flex w-full justify-center">
+              <button
+                class="px-auto mt-12 w-full md:w-3/12 sm:mb-9 hd:mb-28 md:mb-36 px-6 border bg-[#0060EF] py-4 md:py-6 text-white hover:text-gray-200 text-lg rounded-xl shadow hover:shadow-lg outline-none focus:outline-none hover:bg-[#0055d4] hover:border-[#0055d4] transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                type="button"
+              >
+                Cargar más
+              </button>
+            </div></span
+          >
+        </div>
+      </main>
     </div>
     <script id="__NEXT_DATA__" type="application/json">
       {
         "props": { "pageProps": {} },
-        "page": "/total-courses",
+        "page": "/dashboard",
         "query": {},
         "buildId": "D6n3eQ0jnUebzmoiCPksF",
         "assetPrefix": ".",
